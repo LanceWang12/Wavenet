@@ -2,9 +2,11 @@
 
 ## -Data flow-
 
-1. PyTorch version![Screen Shot 2020-09-22 at 8.29.35 PM](/Users/wangruicheng/Library/Application Support/typora-user-images/Screen Shot 2020-09-22 at 8.29.35 PM.png)
+1. PyTorch version
+   ![image](https://github.com/LanceWang12/Wavenet-for-time-series-data-/blob/master/Some_picture/PyTorch_dataflow.png)
 
-2. Keras version![Screen Shot 2020-09-22 at 8.30.34 PM](/Users/wangruicheng/Library/Application Support/typora-user-images/Screen Shot 2020-09-22 at 8.30.34 PM.png)
+2. Keras version
+   ![image](https://github.com/LanceWang12/Wavenet-for-time-series-data-/blob/master/Some_picture/Keras_dataflow.png)
 
 
 
@@ -24,8 +26,6 @@
       model: 預測是之模型
       model_tag: 要測試的是 deep learning or machine learning('dl' or 'ml')
       data: 經過特徵工程的資料集
-
-      -----------------------------------------------
       data_info: 為一字典，存放資料如下
       data_info = {
           'label': dataframe 中 label 的欄位名稱, 
@@ -33,9 +33,7 @@
           'start': 測試開始日期,
           'end': 測試結束日期
       }
-      -----------------------------------------------
 
-      -----------------------------------------------
       rolling_info: 為一字典，存放資料如下
       rolling_info = {
           'lag': 向前看幾天,
@@ -48,7 +46,6 @@
           'scheduler': Scheduler,
           'early_stop': Early_stopping
       }
-      -----------------------------------------------
 
    
 
@@ -111,6 +108,7 @@
       use_bias: 是否需要 bias
 
    b. 用途:組合成 GatedConv1D 單元
+      ![image](https://github.com/LanceWang12/Wavenet-for-time-series-data-/blob/master/Some_picture/GatedConv1d.png)
 
 
    
@@ -119,5 +117,4 @@
 
    a. 參數解釋: 同上
    b. 組成含有 residual, skip 的單元架構
-
-   <img src="/Users/wangruicheng/Library/Application Support/typora-user-images/Screen Shot 2020-09-22 at 8.40.24 PM.png" alt="Screen Shot 2020-09-22 at 8.40.24 PM" style="zoom:67%;" />
+      ![image](https://github.com/LanceWang12/Wavenet-for-time-series-data-/blob/master/Some_picture/GatedResidualBlock.png)
