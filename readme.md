@@ -2,12 +2,10 @@
 
 ## -Data flow-
 
-1. PyTorch version
-   ![image](https://github.com/LanceWang12/Wavenet-for-time-series-data-/blob/master/Some_picture/PyTorch_dataflow.png)
+1. PyTorch version ![image](https://github.com/LanceWang12/Wavenet-for-time-series-data-/blob/master/Some_picture/PyTorch_dataflow.png)
    
 
-2. Keras version
-   ![image](https://github.com/LanceWang12/Wavenet-for-time-series-data-/blob/master/Some_picture/Keras_dataflow.png)
+2. Keras version ![image](https://github.com/LanceWang12/Wavenet-for-time-series-data-/blob/master/Some_picture/Keras_dataflow.png)
 
 
 
