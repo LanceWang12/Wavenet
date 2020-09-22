@@ -60,6 +60,7 @@
 1. def generate_data(df, label_idx, date_idx, model_tag = 'dl', lag = 28, gap = 22, normalize_method = 'min-max', start = None, end = None):
 
    a. 參數解釋:
+<pre>
       df: 特徵工程完之資料
       label_idx: label 對應的欄位
       date_idx: 日期對應之欄位
@@ -69,7 +70,7 @@
       normalize_method: normalize 之方法
       start: 開始日期
       end: 結束日期
-
+</pre>
    
 
    b. 用途:生成 wavenet 所需的格式資料
@@ -81,6 +82,7 @@
 
 1. class Wavenet
     a. 參數解釋:
+<pre> 
        time_step: 向前看幾天
        feature_num: 一天的特徵數量(技術指標, 經濟指標等......)
        kernel_size: Conv1D 的 kernel 大小
@@ -88,7 +90,7 @@
        num_layers: 一個 Wavenet block 要有幾層 layer
        output_channel: 每個 Conv1D 的輸出 channel(務必大於 feature_num)
        reg: L2 regularization 之係數
-
+</pre>
 2. 用途:
    構建 Wavenet 架構之類別
 
@@ -97,6 +99,7 @@
 1. class GatedConv1D
 
    a. 參數解釋:
+   <pre>
       filters: 幾個 kernel
       kernel_size: kernel 寬度
       strides: 步伐大小(原始 Wavenet 架構皆為 1)
@@ -106,7 +109,7 @@
 
       dilation rate: 空洞大小
       use_bias: 是否需要 bias
-
+</pre>
    b. 用途:組合成 GatedConv1D 單元
       ![image](https://github.com/LanceWang12/Wavenet-for-time-series-data-/blob/master/Some_picture/GatedConv1d.png)
 
