@@ -26,6 +26,7 @@
       model_tag: 要測試的是 deep learning or machine learning('dl' or 'ml')
       data: 經過特徵工程的資料集
       data_info: 為一字典，存放資料如下
+<pre>
       data_info = {
           'label': dataframe 中 label 的欄位名稱, 
           'date': dataframe 中 target_date 的欄位名稱,
@@ -45,7 +46,7 @@
           'scheduler': Scheduler,
           'early_stop': Early_stopping
       }
-
+</pre>
    
 
    c. 回傳: Accuracy 之歷史紀錄與預測結果
