@@ -99,7 +99,7 @@
 1. class GatedConv1D
 
    a. 參數解釋:
-   <pre>
+<pre>
       filters: 幾個 kernel
       kernel_size: kernel 寬度
       strides: 步伐大小(原始 Wavenet 架構皆為 1)
@@ -110,6 +110,7 @@
       dilation rate: 空洞大小
       use_bias: 是否需要 bias
 </pre>
+
    b. 用途:組合成 GatedConv1D 單元
       ![image](https://github.com/LanceWang12/Wavenet-for-time-series-data-/blob/master/Some_picture/GatedConv1d.png)
 
